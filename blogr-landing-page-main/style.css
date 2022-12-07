@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+body{
+  max-width: 1440px;
+}
+
 header{
   width: 100%;
   height: 600px;
   border-radius: 0 0 0 90px;
   background-image: url("images/bg-pattern-intro-desktop.svg"), linear-gradient(138deg, #ff8f70,  #ff3d54);
   background-size: 220%, 100%;
-  background-position: 25% 53%, 0% 0%;
+  background-position: 26% 52%, 0% 0%;
   background-repeat: no-repeat;
   display: flex;
 }
@@ -21,11 +25,7 @@ nav.nav-principal{
   gap: 65px;
 }
 
-.nav-principal h1{
-  font-family: 'Overpass', sans-serif;
-  font-size: 55px;
-  font-weight: 700;
-  color: hsl(0, 0%, 100%);
+nav.nav-principal img.logo{
   margin-left: 160px ;
 }
 
@@ -108,7 +108,10 @@ li.li-p a.ul-link:hover{
 } 
 
 nav.nav-principal div.button{
-  margin-left: 110px ;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 220px;
 }
 
 div.button button.bt-login{
@@ -122,6 +125,11 @@ div.button button.bt-sing{
   width: 140px;
   height: 50px;
   border-radius: 30px;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color:  hsl(356, 100%, 66%);
 }
 
 div.button button.bt-sing:hover{
@@ -130,7 +138,7 @@ div.button button.bt-sing:hover{
   cursor: pointer;
 }
 
-div.button .bt-login{
+div.button button.bt-login{
   font-family: 'Overpass', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -139,11 +147,101 @@ div.button .bt-login{
   cursor: pointer;
 }
 
-div.button .bt-sing {
+section.modern{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 60px;
+}
+
+section.modern p.p-platform{
   font-family: 'Overpass', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 50px;
+  font-weight: 600;
+  color:hsl(0, 0%, 100%);
+}
+
+section.modern p.p-brand{
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color:hsl(240, 2%, 79%);
+}
+
+section.modern div.sec-button{
+ margin-top: 20px;
+}
+
+section.modern button.bt-start{
+  border: none;
+  width: 140px;
+  height: 50px;
+  margin: 15px;
+  border-radius: 30px;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
   text-decoration: none;
   color:  hsl(356, 100%, 66%);
 }
+
+section.modern button.bt-start:hover{
+  background-color: hsl(355, 100%, 74%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+section.modern button.bt-more{
+  border: none;
+  width: 140px;
+  height: 50px;
+  border-radius: 30px;
+  border: 2px solid hsl(0, 0%, 100%);
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  background-color: transparent;
+}
+
+section.modern button.bt-more:hover{
+  background-color: hsl(0, 0%, 100%) ;
+  color:hsl(355, 100%, 74%);
+  cursor: pointer;
+}
+
+section.sec-one{
+  width: 100%;
+  height: 800px;
+  display: flex;
+  background-image: url("images/illustration-editor-desktop.svg");
+  background-size: 50%, 100%;
+  background-position: 127% 43%, 0% 0%;
+  background-repeat: no-repeat;
+}
+
+section.sec-one div.content{
+  margin-top: 150px;
+  text-align: center;
+}
+
+div.content h1.h-main{
+  font-family: 'Overpass', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: hsl(208, 49%, 24%);
+}
+
+section.sec-one div.content-one{
+  width: 50%;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+
+}
+
 

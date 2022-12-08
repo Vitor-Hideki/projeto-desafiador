@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="reset.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script type="text/javascript" src="js.js" ></script>
+  <script src="JavaScript/js.js" defer ></script>
   
   <title>Frontend Mentor | [Blogr]</title>
 
@@ -18,31 +16,36 @@
   <header>
       <nav class="nav-principal">
         <img class="logo" src="images/logo.svg" alt="logo">
+
         <ul id="product">
-          <li class="li-p"> <a class="bt1" href="javascript://">Product<img src="images/icon-arrow-light.svg" alt=""></a>
-            <ul class="ul-product">
-              <li><a class="ul-link" href="">Overview</a></li>
-              <li><a class="ul-link" href="">Pricing</a></li>
-              <li><a class="ul-link" href="">Marketplace</a></li>
-              <li><a class="ul-link" href="">Features</a></li>
-              <li><a class="ul-link" href="">Integrations</a></li>
+          <li class="li-p">
+
+             <a class="bt1" href="#">Product<img src="images/icon-arrow-light.svg" alt=""></a>
+
+            <ul id="ul-product" class="submenu">
+              <li><a class="ul-link" href="#">Overview</a></li>
+              <li><a class="ul-link" href="#">Pricing</a></li>
+              <li><a class="ul-link" href="#">Marketplace</a></li>
+              <li><a class="ul-link" href="#">Features</a></li>
+              <li><a class="ul-link" href="#">Integrations</a></li>
+            </ul>
+          
+          </li>
+
+          <li class="li-p" ><a class="bt1" href="#">Company<img src="images/icon-arrow-light.svg" alt=""></a>
+            <ul id="ul-company" class="submenu">
+              <li><a class="ul-link" href="#">About</a></li>
+              <li><a class="ul-link" href="#">Team</a></li>
+              <li><a class="ul-link" href="#">Blog</a></li>
+              <li><a class="ul-link" href="#">Careers</a></li>
             </ul>
           </li>
 
-          <li class="li-p" ><a class="bt2" href="javascript://">Company<img src="images/icon-arrow-light.svg" alt=""></a>
-            <ul class="ul-company">
-              <li><a class="ul-link" href="">About</a></li>
-              <li><a class="ul-link" href="">Team</a></li>
-              <li><a class="ul-link" href="">Blog</a></li>
-              <li><a class="ul-link" href="">Careers</a></li>
-            </ul>
-          </li>
-
-          <li class="li-p"><a class="bt3" href="javascript://">Connect<img src= "images/icon-arrow-light.svg" alt=""></a>
-            <ul class="ul-connect">
-              <li><a class="ul-link" href="">Contact</a></li>
-              <li><a class="ul-link" href="">Newsletter</a></li>
-              <li><a class="ul-link" href="">LinkedIn</a></li>
+          <li class="li-p"><a class="bt1" href="#">Connect<img src= "images/icon-arrow-light.svg" alt=""></a>
+            <ul id="ul-connect" class="submenu">
+              <li><a class="ul-link" href="#">Contact</a></li>
+              <li><a class="ul-link" href="#">Newsletter</a></li>
+              <li><a class="ul-link" href="#">LinkedIn</a></li>
             </ul>
           </li>
         </ul>

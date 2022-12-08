@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 body{
-  max-width: 1440px;
+  width: 1440px;
 }
 
 header{
@@ -46,14 +46,8 @@ li.li-p{
   padding: 5px;
 }
 
-.ul-product, .ul-company, .ul-connect{
-  display: none ;
-  margin-top: 10px;
-  width: 120px;
-  padding: 10px;
-}
-
-li.li-p a.bt1, a.bt2, a.bt3{
+li.li-p a.bt1{
+  white-space: 100%;
   font-family: 'Overpass', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -62,32 +56,40 @@ li.li-p a.bt1, a.bt2, a.bt3{
   padding-left: 10px;
 }
 
-li.li-p a.bt1:hover, a.bt2:hover, a.bt3:hover{
+li.li-p a.bt1:hover{
   text-decoration: underline;
-
 }
 
-li.li-p .ul-product, .ul-company, .ul-connect{
-  display: none ;
+li.li-p .submenu{
   margin-top: 10px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
   box-shadow: 0px 0px 80px 10px rgba(0, 0, 0, 0.162);
+  transform: translateY(15%);
+  opacity: 0;
+  pointer-events: none;
 }
 
-li.li-p .ul-product{
+li.li-p #ul-product{
   height: 125px;
   width: 100px;
   padding: 15px 8px;
 }
 
-li.li-p .ul-company{
+li.li-p .submenu.show{
+transform: translateY(0);
+opacity: 1;
+pointer-events: auto;
+
+}
+
+li.li-p #ul-company{
   height: 100px;
   width: 100px;
   padding: 15px 8px;
 }
 
-li.li-p .ul-connect{
+li.li-p #ul-connect{
   height: 75px;
   width: 100px;
   padding: 15px 8px;

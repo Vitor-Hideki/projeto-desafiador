@@ -278,5 +278,25 @@ div.content-one p.p-first{
   margin-bottom: 60px;
 }
 
+section.smartphone{
+  width: 100%;
+  height: 700px;
+  background-color: antiquewhite;
+}
+
+section.smartphone div.container{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  background-image: url("images/bg-pattern-circles.svg"), linear-gradient(38deg, hsl(237, 17%, 21%),  hsl(237, 23%, 32%));
+  background-size: 76%, 100%;
+  background-position: -67% 80%, 0% 0%;
+  background-repeat: no-repeat;
+  border-radius: 0px 100px 0px 100px;
+} 
+
 
 

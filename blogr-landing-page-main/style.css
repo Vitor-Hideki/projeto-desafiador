@@ -29,21 +29,18 @@ nav.nav-principal img.logo{
   margin-left: 160px ;
 }
 
-ul img{
-  padding-left: 5px;
-}
-
-ul#product{
-  height: 10px;
+ul.product{
+  width: 100%;
+  height: 30px;
+  margin-top: 25px;
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: flex-start;
+  gap: px;
 }
 
 li.li-p{
   display: block;
-  width: 90px;
-  padding: 5px;
+  width: 100px;
 }
 
 li.li-p a.bt1{
@@ -56,8 +53,21 @@ li.li-p a.bt1{
   padding-left: 10px;
 }
 
+
 li.li-p a.bt1:hover{
   text-decoration: underline;
+}
+
+li.li-p a.bt1 img.icon {
+  padding-left: 10px;
+  transition: 0.5s;
+}
+
+li.li-p a.bt1 img.icon.reverse{
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 
 li.li-p .submenu{
@@ -67,20 +77,20 @@ li.li-p .submenu{
   box-shadow: 0px 0px 80px 10px rgba(0, 0, 0, 0.162);
   transform: translateY(15%);
   opacity: 0;
-  pointer-events: none;
+  pointer-events: none; 
+}
+
+li.li-p .submenu.show{
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: ease 0.5s;
 }
 
 li.li-p #ul-product{
   height: 125px;
   width: 100px;
   padding: 15px 8px;
-}
-
-li.li-p .submenu.show{
-transform: translateY(0);
-opacity: 1;
-pointer-events: auto;
-
 }
 
 li.li-p #ul-company{
@@ -107,6 +117,7 @@ li.li-p a.ul-link {
 
 li.li-p a.ul-link:hover{
   font-weight: 700;
+  transition: ease 0.4s;
 } 
 
 nav.nav-principal div.button{
@@ -138,6 +149,7 @@ div.button button.bt-sing:hover{
   background-color: hsl(355, 100%, 74%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+  transition: ease 0.5s;
 }
 
 div.button button.bt-login{
@@ -194,6 +206,7 @@ section.modern button.bt-start:hover{
   background-color: hsl(355, 100%, 74%);
   color: hsl(0, 0%, 100%);
   cursor: pointer;
+  transition: ease 0.5s;
 }
 
 section.modern button.bt-more{
@@ -214,21 +227,19 @@ section.modern button.bt-more:hover{
   background-color: hsl(0, 0%, 100%) ;
   color:hsl(355, 100%, 74%);
   cursor: pointer;
+  transition: ease 0.5s;
 }
 
 section.sec-one{
   width: 100%;
-  height: 800px;
+  height:900px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("images/illustration-editor-desktop.svg");
-  background-size: 50%, 100%;
-  background-position: 127% 43%, 0% 0%;
+  background-size: 60%, 100%;
+  background-position: 145% 60%, 0% 0%;
   background-repeat: no-repeat;
-}
-
-section.sec-one div.content{
-  margin-top: 150px;
-  text-align: center;
 }
 
 div.content h1.h-main{
@@ -236,14 +247,36 @@ div.content h1.h-main{
   font-size: 35px;
   font-weight: 600;
   color: hsl(208, 49%, 24%);
+  text-align: center;
 }
 
 section.sec-one div.content-one{
   width: 50%;
-  margin-top: 150px;
+  margin-left: 130px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
-
+  justify-content: flex-start;
+  padding: 30px;
 }
+
+div.content-one h1.h-first{
+  font-family: 'Overpass', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: hsl(208, 49%, 24%);
+  margin: 30px 0;
+}
+
+div.content-one p.p-first{
+  width: 73%;
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(207, 13%, 34%);
+  line-height: 30px;
+  margin-bottom: 60px;
+}
+
 
 

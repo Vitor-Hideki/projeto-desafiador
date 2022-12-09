@@ -8,7 +8,7 @@ header{
   width: 100%;
   height: 600px;
   border-radius: 0 0 0 90px;
-  background-image: url("images/bg-pattern-intro-desktop.svg"), linear-gradient(138deg, #ff8f70,  #ff3d54);
+  background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(138deg, #ff8f70,  #ff3d54);
   background-size: 220%, 100%;
   background-position: 26% 52%, 0% 0%;
   background-repeat: no-repeat;
@@ -35,7 +35,6 @@ ul.product{
   margin-top: 25px;
   display: flex;
   justify-content: flex-start;
-  gap: px;
 }
 
 li.li-p{
@@ -236,7 +235,7 @@ section.sec-one{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("images/illustration-editor-desktop.svg");
+  background-image: url("../images/illustration-editor-desktop.svg");
   background-size: 60%, 100%;
   background-position: 145% 60%, 0% 0%;
   background-repeat: no-repeat;
@@ -260,7 +259,7 @@ section.sec-one div.content-one{
   padding: 30px;
 }
 
-div.content-one h1.h-first{
+div.content-one h1.h-first, div.content-two h1.h-two{
   font-family: 'Overpass', sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -268,8 +267,8 @@ div.content-one h1.h-first{
   margin: 30px 0;
 }
 
-div.content-one p.p-first{
-  width: 73%;
+ div.content-one p.p-first, div.content-two p.p-two{
+  width: 79%;
   font-family: 'Overpass', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -280,23 +279,81 @@ div.content-one p.p-first{
 
 section.smartphone{
   width: 100%;
-  height: 700px;
-  background-color: antiquewhite;
+  height: 100%;
+ 
 }
 
 section.smartphone div.container{
   width: 100%;
   height: 400px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 60px ;
   background-color: aqua;
-  background-image: url("images/bg-pattern-circles.svg"), linear-gradient(38deg, hsl(237, 17%, 21%),  hsl(237, 23%, 32%));
+  background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(38deg, hsl(237, 17%, 21%),  hsl(237, 23%, 32%));
   background-size: 76%, 100%;
   background-position: -67% 80%, 0% 0%;
   background-repeat: no-repeat;
   border-radius: 0px 100px 0px 100px;
 } 
+
+div.container div.phone img.i-pho{
+  margin-top: 50px;
+}
+
+div.container div.text-phone{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+div.container div.text-phone h2{
+  font-family: 'Overpass', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 30px;
+}
+
+div.container div.text-phone p.p-phone{
+  font-family: 'Overpass', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 30px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 30px;
+}
+
+section.sec-two{
+  width: 100%;
+  height:900px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 90px;
+  background-image: url("../images/illustration-laptop-desktop.svg");
+  background-size: 75%, 100%;
+  background-position: -85% 60%, 0% 0%;
+  background-repeat: no-repeat;
+}
+
+section.sec-two div.title-two{
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 200px;
+}
+
+section.sec-two div.content-two{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+
 
 
 

@@ -9,8 +9,6 @@
    - [Desenvolvimento contínuo](#desenvolvimento-contínuo)
    - [Recursos úteis](#useful-resources)
 
-
-
 ## Visão geral
 
 ### Captura de tela
@@ -19,7 +17,7 @@
 
 ### Links
 
- - URL do site: [Add live site URL here](https://your-live-site-url.com)
+ - URL do site: [Link do projeto](https://project-blogr.netlify.app/m)
 
 ## Meu processo
 

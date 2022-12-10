@@ -1,111 +1,119 @@
-# Frontend Mentor - Blogr landing page solution
+## Índice
 
-This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+- [Visão geral](#visão-geral)
+   - [Captura de tela](#captura-de-tela)
+   - [Links](#links)
+- [Meu processo](#meu-processo)
+   - [Construído com](#construído-com)
+   - [O que aprendi](#o-que-aprendi)
+   - [Desenvolvimento contínuo](#desenvolvimento-contínuo)
+   - [Recursos úteis](#useful-resources)
 
-## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+## Visão geral
 
-## Overview
+### Captura de tela
 
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](../images/projeto-desafiador.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+ - URL do site: [Add live site URL here](https://your-live-site-url.com)
 
-## My process
+## Meu processo
 
-### Built with
+### Construído com
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Marcação HTML5 semântica
+- Propriedades personalizadas CSS
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- JavaScript
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+### O que eu aprendi
 
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+Neste projeto eu pude montar um menu dropdow, estilizando no css eu tive contatos com mais algumas propriedades do background, e transform. E a utilização de JavaScript, para que após clicar no menu de navegação, o submenu aparecesse e o icone invertece. 
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<ul class="product">
+          <li class="li-p">
+
+             <a class="bt1" href="#">Product<img class="icon" src="assets/images/icon-arrow-light.svg" alt="icon-arrow-light"></a>
+
+                <ul id="ul-product" class="submenu">
+                  <li><a class="ul-link" href="#">Overview</a></li>
+                  <li><a class="ul-link" href="#">Pricing</a></li>
+                  <li><a class="ul-link" href="#">Marketplace</a></li>
+                  <li><a class="ul-link" href="#">Features</a></li>
+                  <li><a class="ul-link" href="#">Integrations</a></li>
+                </ul>
+          
+          </li>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+header div.cabecalho{
+  width: 100%;
+  height: 600px;
+  border-radius: 0 0 0 100px;
+  background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(138deg, #ff8f70,  #ff3d54);
+  background-size: 220%, 100%;
+  background-position: 26% 52%, 0% 0%;
+  background-repeat: no-repeat;
+}
+
+li.li-p a.bt1 img.icon.reverse{
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+document.addEventListener('click', (e) => {
+    const isDropdownBtn = e.target.classList.contains('bt1') || e.target.classList.contains('icon') ;
+
+   if (!isDropdownBtn && e.target.closest('.li-p') != null ) return;
+
+   let currentSubmenu
+
+   let currentIcon
+
+   if(isDropdownBtn){
+    const item = e.target.closest('.li-p')
+
+    currentSubmenu = item.querySelector('.submenu')
+
+    currentSubmenu.classList.toggle('show')
+
+    currentIcon = item.querySelector('.icon')
+
+    currentIcon.classList.toggle('reverse')
+   }
+
+   document.querySelectorAll('.submenu.show').forEach((submenu) => {
+    if(submenu == currentSubmenu) return;
+
+    submenu.classList.remove('show');
+
+   });
+
+   document.querySelectorAll('.icon.reverse').forEach((reverse) => {
+    if(reverse == currentIcon) return;
+
+    reverse.classList.remove('reverse');
+   });
+
+} );
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### Desenvolvimento contínuo
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+  Ao termino desse projeto, eu pretendo realizar outro projeto que obtenha formulario, e validação com JavaScript, uma tecnologia que ainda nao estou habituado a mexer.
 
-### Continued development
+### Recursos úteis
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- [Regra trasnform](https://horadecodar.com.br/2020/05/15/como-inverter-uma-imagem-com-css-espelhar-flip/) - Esse artigo me ajudou para que eu pudesse, fazer o icone light, inverter. 
+- [Menu Dropdown](https://www.youtube.com/watch?v=1L50KvRK2Ic&t=1076s) - Este é um video bem explicativo de como fazer um menu dropdown com a utilização de javascript
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
-## Author
-
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

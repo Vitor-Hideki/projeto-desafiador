@@ -13,7 +13,7 @@
 
 ### Captura de tela
 
-![](../images/projeto-desafiador.jpg)
+![](blogr-landing-page-main/assets/images/projeto-desafiador.jpgimages/projeto-desafiador.jpg)
 
 ### Links
 

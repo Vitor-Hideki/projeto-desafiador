@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 body{
-  width: 100%;
-  height: 100vh;
-  overflow-x: hidden;
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden ;
 }
 
-header div.cabecalho{
+header{
   width: 100%;
   height: 600px;
   border-radius: 0 0 0 100px;
@@ -15,6 +15,9 @@ header div.cabecalho{
   background-position: 26% 52%, 0% 0%;
   background-repeat: no-repeat;
 }
+div.cabecalho{
+  padding: 65px 130px;
+}
 
 nav.nav-principal{
   width: 100%;
@@ -22,13 +25,10 @@ nav.nav-principal{
   padding: 50px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   gap: 65px;
 }
 
-nav.nav-principal img.logo{
-  margin-left: 160px ;
-}
 
 ul.product{
   width: 100%;
@@ -44,7 +44,6 @@ li.li-p{
 }
 
 li.li-p a.bt1{
-  white-space: 100%;
   font-family: 'Overpass', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -124,7 +123,7 @@ nav.nav-principal div.button{
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-right: 220px;
+  margin-right: 10px;
 }
 
 div.button button.bt-login{
@@ -233,6 +232,7 @@ section.modern button.bt-more:hover{
 section.sec-one{
   width: 100%;
   height:900px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,17 +242,23 @@ section.sec-one{
   background-repeat: no-repeat;
 }
 
+div.content{
+  margin-top: 50px;
+  padding: 65px 145px;
+
+}
+
 div.content h1.h-main{
   font-family: 'Overpass', sans-serif;
   font-size: 35px;
   font-weight: 600;
   color: hsl(208, 49%, 24%);
   text-align: center;
+  margin-top: 80px;
 }
 
 section.sec-one div.content-one{
-  width: 50%;
-  margin-left: 130px;
+  width: 65%;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
@@ -280,23 +286,22 @@ div.content-one h1.h-first, div.content-two h1.h-two{
 
 section.smartphone{
   width: 100%;
-  height: 100%;
- 
-}
-
-section.smartphone div.container{
-  width: 100%;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px ;
+  margin-top: 50px;
   background-color: aqua;
   background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(38deg, hsl(237, 17%, 21%),  hsl(237, 23%, 32%));
   background-size: 76%, 100%;
   background-position: -67% 80%, 0% 0%;
   background-repeat: no-repeat;
   border-radius: 0px 100px 0px 100px;
+
+}
+
+section.smartphone div.container{
+  height: 400px;
+  padding: 0px 130px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
 } 
 
 div.container div.phone img.i-pho{
@@ -304,7 +309,6 @@ div.container div.phone img.i-pho{
 }
 
 div.container div.text-phone{
-  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -330,12 +334,11 @@ div.container div.text-phone p.p-phone{
 section.sec-two{
   width: 100%;
   height:900px;
+  margin: 100px 0px;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  gap: 90px;
   background-image: url("../images/illustration-laptop-desktop.svg");
-  background-size: 75%, 100%;
+  background-size: 73%, 100%;
   background-position: -85% 60%, 0% 0%;
   background-repeat: no-repeat;
 }
@@ -343,15 +346,15 @@ section.sec-two{
 section.sec-two div.title-two{
   display: flex;
   justify-content: flex-end;
-  margin-left: 200px;
+  padding: 0px 0px 0px 130px;
 }
 
 section.sec-two div.content-two{
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin-top: 50px;
+  margin: 50px 0px 0px 60px;
   padding: 20px;
+  width: 50%;
 }
 
 footer{
@@ -400,6 +403,3 @@ li.footer-p ul.f-submenu a.f-link{
 li.footer-p ul.f-submenu a.f-link:hover{
   text-decoration: underline;
 }
-
-
-

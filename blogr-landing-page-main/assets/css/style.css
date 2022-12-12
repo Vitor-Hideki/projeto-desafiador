@@ -338,7 +338,7 @@ section.sec-two{
   display: flex;
   align-items: center;
   background-image: url("../images/illustration-laptop-desktop.svg");
-  background-size: 73%, 100%;
+  background-size: 70%, 100%;
   background-position: -85% 60%, 0% 0%;
   background-repeat: no-repeat;
 }

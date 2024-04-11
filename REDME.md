@@ -17,7 +17,7 @@
 
 ### Links
 
- - URL do site: [Link do projeto]()
+ - URL do site: [Link do projeto](https://projetoblogr.netlify.app/)
 
 ## Meu processo
 

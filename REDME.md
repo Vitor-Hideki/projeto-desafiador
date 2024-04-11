@@ -13,11 +13,11 @@
 
 ### Captura de tela
 
-![](../assets/images/projeto-desafiador.jpg)
+![](/src/assets/images/projeto-desafiador.jpg)
 
 ### Links
 
- - URL do site: [Link do projeto](https://project-blogr.netlify.app)
+ - URL do site: [Link do projeto]()
 
 ## Meu processo
 

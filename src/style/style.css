@@ -10,10 +10,11 @@ header{
   width: 100%;
   height: 600px;
   border-radius: 0 0 0 100px;
-  background-image: url("../images/bg-pattern-intro-desktop.svg"), linear-gradient(138deg, #ff8f70,  #ff3d54);
+  background-image: url("/src/assets/images/bg-pattern-intro-desktop.svg"), linear-gradient(138deg, #ff8f70,  #ff3d54);
   background-size: 220%, 100%;
   background-position: 26% 52%, 0% 0%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+ 
 }
 div.cabecalho{
   padding: 65px 130px;
@@ -236,10 +237,11 @@ section.sec-one{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/illustration-editor-desktop.svg");
+  background-image: url("/src/assets/images/illustration-editor-desktop.svg");
   background-size: 60%, 100%;
   background-position: 145% 60%, 0% 0%;
   background-repeat: no-repeat;
+  
 }
 
 div.content{
@@ -288,7 +290,7 @@ section.smartphone{
   width: 100%;
   margin-top: 50px;
   background-color: aqua;
-  background-image: url("../images/bg-pattern-circles.svg"), linear-gradient(38deg, hsl(237, 17%, 21%),  hsl(237, 23%, 32%));
+  background-image: url("/src/assets/images/bg-pattern-circles.svg"), linear-gradient(38deg, hsl(237, 17%, 21%),  hsl(237, 23%, 32%));
   background-size: 76%, 100%;
   background-position: -67% 80%, 0% 0%;
   background-repeat: no-repeat;
@@ -337,7 +339,7 @@ section.sec-two{
   margin: 100px 0px;
   display: flex;
   align-items: center;
-  background-image: url("../images/illustration-laptop-desktop.svg");
+  background-image: url("/src/assets/images/illustration-laptop-desktop.svg");
   background-size: 70%, 100%;
   background-position: -85% 60%, 0% 0%;
   background-repeat: no-repeat;
